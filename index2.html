@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        h2, h3{
+            background-color: blueviolet;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+        }
+    section{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url("data:image/jpeg;base64,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");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* display: flex; */
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <H2>
+            Every friday our school organige different programs to make students skillful and extra ordinary.
+        </H2>
+        <br>
+        <h3>
+            Below are the outcomes of our programs:-
+        </h3>
+    </header>
+
+    <section>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdilisha.thapa%2Fposts%2Fpfbid02LfCbsaGPMJYYf3KRCsZqkLbJAvr4YCMHr6tivPkQnzq7Eh6G1G48M1N7ehc3BYppl&show_text=true&width=500" width="500" height="393" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <br>
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fbina.pathak.9828%2Fposts%2Fpfbid02E97dAhjXVotvhZa9GmYGT3HDNEq1h394DG9VbjyYA3VXKnmaEywdcQ9wEsDEPBPol&show_text=true&width=500" width="500" height="391" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <br>
+    <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02B8AFv2eaFUQSZjkrpxbssWLxxRHDnS6J1vMy4U8gKN85oULpYU7o7NNSDAKVzkutl%26id%3D100059065831016&show_text=true&width=500" width="500" height="346" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    <br>
+    <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100082865246326%2Fvideos%2F1019621079353395%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <br>
+    <iframe src="https://www.facebook.com/plugins/video.php?height=316&href=https%3A%2F%2Fwww.facebook.com%2F100082865246326%2Fvideos%2F734755158498942%2F&show_text=false&width=560&t=0" width="560" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <br>
+    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2F100082865246326%2Fvideos%2F316136727752043%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+    <br>
+    </section>
+    
+
+</body>
+</html>
